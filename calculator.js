@@ -24,7 +24,7 @@ function evaluate(expression) {
 		var operator = operatorsByPrecedence[i];
 		result = operate(expression, operator, operatorHash[operator]);
 		console.log(result);
-		if (result != null) {
+		if (result !== null) {
 			break;
 		}
 	}
